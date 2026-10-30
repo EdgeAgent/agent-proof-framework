@@ -1,0 +1,6 @@
+Receipt: /home/hatch/workspace/agent-proof-framework/receipts/demo-1.json
+Steps: 6  Final hash: 7eeef11dbae4c1df...  Cost: $0 (mock)
+Gate: 1 blocked, 1 approved (Kevin, exact payload only)
+Silent failure: 1 flagged, not passed
+Tampered copy: /home/hatch/workspace/agent-proof-framework/receipts/demo-1-tampered.json
+TAMPERED at step-2 — do not trust this receipt

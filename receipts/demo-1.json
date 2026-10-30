@@ -1,0 +1,76 @@
+{
+  "run_id": "demo-1",
+  "agent_id": "agent-orchestra-boss",
+  "task": "Build a lead pack for AgencyLead.ca",
+  "steps": [
+    {
+      "id": "step-1",
+      "kind": "read",
+      "detail": "Loaded 30 London no-website leads",
+      "evidence": "london-ontario-no-website-leads.csv",
+      "cost": 0,
+      "approved_by": null,
+      "ts": 1793345202,
+      "hash": "7567928c3bde29409e8bfa44a557842fdc997c49f3dd671c39987e939ddf52a4"
+    },
+    {
+      "id": "step-2",
+      "kind": "decision",
+      "detail": "Scored leads, top 5 selected",
+      "evidence": "score: A/B/C rubric",
+      "cost": 0,
+      "approved_by": null,
+      "ts": 1793345202,
+      "hash": "d6452776929d63982a6b17d9cb2f7d4481a4aeb372cf6400efdcec4084ba1a3d"
+    },
+    {
+      "id": "step-3",
+      "kind": "tool",
+      "detail": "Checked scrub list for top 5",
+      "evidence": "scrub-list: 0 hits",
+      "cost": 0,
+      "approved_by": null,
+      "ts": 1793345202,
+      "hash": "e2ce8d5f3a3e7d0d9f1a9eb7ff2aac81e7ab7fb416cf90ab2d5b2ef3b5de56db"
+    },
+    {
+      "id": "step-4",
+      "kind": "gate_blocked",
+      "detail": "send blocked: lead pack to client",
+      "evidence": "gate: exact approval required",
+      "cost": 0,
+      "approved_by": null,
+      "ts": 1793345202,
+      "hash": "bc79ec15861f2729963b8dc545a3c91ecd60c2d4197b4ed5fbef65b84f770658"
+    },
+    {
+      "id": "step-5",
+      "kind": "gate_approved",
+      "detail": "send approved: lead pack to client",
+      "evidence": "gate: exact payload approved",
+      "cost": 0,
+      "approved_by": "Kevin",
+      "ts": 1793345202,
+      "hash": "12cd98ac0f23b0fa1871133b7d7e0722484dbce8f164db97a5c447bdf2741b96"
+    },
+    {
+      "id": "step-6",
+      "kind": "failed_silent",
+      "detail": "Agent-2 sub-task produced no output in 60s",
+      "evidence": "no output / no evidence \u2014 flagged, never silently passed",
+      "cost": 0,
+      "approved_by": null,
+      "ts": 1793345202,
+      "hash": "7eeef11dbae4c1dff556b746a557386932e537f76b584ad43f264af8eb40a0a0"
+    }
+  ],
+  "approvals": [
+    {
+      "action": "send",
+      "payload": "lead pack to client",
+      "approver": "Kevin"
+    }
+  ],
+  "final_hash": "7eeef11dbae4c1dff556b746a557386932e537f76b584ad43f264af8eb40a0a0",
+  "total_cost": 0
+}
